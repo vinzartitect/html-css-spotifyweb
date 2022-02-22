@@ -104,11 +104,82 @@ main {
 .profile span {
    color: white;
 }
- 
- 
 
 
 
+
+
+/* barra in alto fixata */
+.fix-upgrade {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    width: calc(100vw - 230px);
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.upgrade {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background-color: transparent;
+}
+
+.upgrade:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* main centrale con gli album */
+
+/* lista menu in alto */
+.bar-nav {
+    margin-top: 120px;
+}
+
+.bar-nav ul {
+    text-align: center;
+}
+
+.bar-nav li {
+    display:inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+    position: relative;
+}
+
+.bar-nav li > a {
+    color: #64676D;
+    text-decoration: none;
+}
+
+.bar-nav a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+    bottom: -8px;
+    display: none;
+}
+
+.bar-nav a:hover::after {
+    display: block;
+}
 
 
 
@@ -130,15 +201,7 @@ main {
     width: calc(100vw - 230px);
     height: calc(100vh - 90px);
     background-color: #141922;
-}
-
-.fix-upgrade {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: calc(100vw - 230px);
-    height: 90px;
-    background-color: rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
 }
 
 footer {
