@@ -9,15 +9,126 @@ main {
     display: flex;
 }
 
+/* barra laterale di sinistra */
+
 .sidebar {
-    width: 16vw;
-    height: 92vh;
+    width: 230px;
+    height: calc(100vh - 90px);
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.side-2 {
+    width: calc(100% - 20px);
+    color: #717171;
+    margin-left: 20px;
+}
+  
+.logo {
+    width: 130px;
+    margin: 20px 20px;
+}
+  
+.list {
+    width: 100%;
+    color: #717171;
+    margin: 20px 20px;
+}
+
+.list li:hover {
+    border-left: 5px solid yellow;
+    padding-left: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.scroll {
+    height: 40vh;
+    overflow-y: auto;
+}
+  
+.list ul {
+    list-style: none;
+}
+
+.list li {
+    margin:  15px 0;
+}
+
+.list img {
+    width: 20px;
+    height: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.playlist-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #a3a3a3;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding-top: 8px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.profile::before {
+    content: "";
+    height: 1px;
+    width: 190px;
+    background-color: #a3a3a3;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.profile img {
+   height: 25px;
+   width: 25px;
+   background-color: #808080;
+   border-radius: 50%;
+   vertical-align: middle;
+   margin-bottom: 5px;
+}
+
+.profile span {
+   color: white;
+}
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-album {
-    width: 84vw;
-    height: 92vh;
+    width: calc(100vw - 230px);
+    height: calc(100vh - 90px);
     background-color: #141922;
 }
 
@@ -25,13 +136,13 @@ main {
     position: fixed;
     top: 0;
     right: 0;
-    width: 84vw;
-    height: 8vh;
+    width: calc(100vw - 230px);
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 footer {
     width: 100vw;
-    height: 8vh;
+    height: 90px;
     background-color: #282828;
 }
