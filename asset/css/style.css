@@ -65,10 +65,15 @@
     color: #717171;
     margin-left: 20px;
 }
-  
-.logo {
+
+.logo-desk {
+    display: block;
     width: 130px;
     margin: 20px 20px;
+}
+
+.logo-smart {
+    display: none;
 }
   
 .list {
