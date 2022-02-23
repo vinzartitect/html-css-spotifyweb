@@ -25,6 +25,7 @@
     width: 100vw;
     height: 90px;
     background-color: #282828;
+    display: flex;
 }
 
 .sidebar {
@@ -221,6 +222,7 @@
 }
 
 
+
 /* schede degli album  */
 .musicpedia {
     display: flex;
@@ -286,12 +288,107 @@
 
 
 
+/* footer in basso con bottoni */
+.player-left, .player-right {
+    align-items: center;
+    width: 230px;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.player-menu {
+    width: calc(100% - 460px);
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
 
 
 
 
+/* sezione a sinistra con foto album */
+.player-left img {
+    width: 42px;
+    height: 42px;
+    margin-left: 20px;
+}
+
+.song-title h4 {
+    margin: 5px;
+}
+
+.song-title p {
+    color: #6D7075;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.player-loghi {
+    margin-left: 25px;
+    color: #6D7075;
+}
+
+.player-left i {
+    margin-right: 10px;
+}
 
 
 
+
+/* sezione di destra con volume */
+.player-right i {
+    margin-right: 10px;
+}
+
+.volume-bar {
+    width: 50%;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #5a5a5a;
+    margin: 0 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.volume-line {
+    height: inherit;
+    width: 60%;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+} 
+
+.volume-line-yellow {
+    height: inherit;
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgb(81, 255, 0);
+    position: relative;
+    display: none;
+}
+
+.volume-pointer {
+    display: none;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translate(50%,-50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.volume-bar:hover .volume-pointer {
+    display: block;
+    cursor: pointer;
+}
+
+.volume-bar:hover .volume-line-yellow {
+    display: block;
+    cursor: pointer;
+}
 
 
